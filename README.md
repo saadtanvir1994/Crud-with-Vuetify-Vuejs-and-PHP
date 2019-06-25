@@ -1,5 +1,7 @@
 # VUE CRUD using Vuefiy and PHP
 
+You have to create a project a database on phpmyadmin name "vuecrud" and place the api.php file in folder "vuecrud" in htdocs and run the project using  ``` yarn server ``` , but remember you should me in the folder path where you run command.
+
 ## Project setup
 ```
 yarn install
