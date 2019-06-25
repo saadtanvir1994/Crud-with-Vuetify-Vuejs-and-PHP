@@ -1,4 +1,4 @@
-# vuecrud
+# VUE CRUD using Vuefiy and PHP
 
 ## Project setup
 ```
