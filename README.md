@@ -1,2 +1,29 @@
-# Crud-with-Vuetify-Vuejs-and-PHP
-This is a small project in vuetify, vuejs and php. It performs all the basic operations: Create, Read, Update and Delete. Vuetify version is 1.5.16 and vue version is 3.8.4
+# vuecrud
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
