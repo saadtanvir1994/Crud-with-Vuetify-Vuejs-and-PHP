@@ -49,13 +49,13 @@ if ($action == 'create') {
 
 // If parameter is update
 if ($action == 'update') {
-	$id = $_POST['id'];
+	$id = $_POST['user_id'];
 	$username = $_POST['username'];
 	$email = $_POST['email'];
 	$mobile = $_POST['mobile'];
 
 
-	$result = $conn->query("UPDATE `users` SET `username` = '$username', `email` = '$email', `mobile` = '$mobile'WHERE `id` = '$id'");
+	$result = $conn->query("UPDATE `users` SET `username` = '$username', `email` = '$email', `mobile` = '$mobile' WHERE `user_id` = '$id'");
 	if ($result) {
 		$res['message'] = "User Updated successfully";
 	} else{
@@ -69,13 +69,10 @@ if ($action == 'update') {
 
 // if parameter is delete
 if ($action == 'delete') {
-	$id = $_POST['id'];
-	$username = $_POST['username'];
-	$email = $_POST['email'];
-	$mobile = $_POST['mobile'];
+	$id = $_POST['user_id'];
 
 
-	$result = $conn->query("DELETE FROM `users` WHERE `id` = '$id'");
+	$result = $conn->query("DELETE FROM `users` WHERE `user_id` = '$id'");
 	if ($result) {
 		$res['message'] = "User deleted successfully";
 	} else{
@@ -94,6 +91,7 @@ if ($action == 'delete') {
 
 $conn -> close();
 header("Content-type: application/json");
+header("Access-Control-Allow-Origin: *");
 echo json_encode($res);
 die();
 
